@@ -29,13 +29,57 @@ Logic Diagram :
 
 VERILOG CODE:
 
-----Type Verilog Code
+module fsm( clk, rst, inp, outp);
+input clk, rst, inp;
+output outp;
+reg [1:0] state;
+reg outp;
+always @(posedge clk, posedge rst)
+begin
+if(rst)
+state<=2'b00;
+else
+begin
+case(state)
+2'b00:
+begin
+if(inp) state <=2'b01;
+else state <=2'b10;
+end
+2'b01:
+begin
+if (inp) state <=2'b11;
+else state<=2'b10;
+end
+2'b10:
+begin
+if (inp) state<=2'b01;
+else state <=2'b11;
+end
+2'b11:
+begin
+if (inp) state <=2'b01;
+else state <=2'b10;
+end
+endcase
+end
+end
+always @(posedge clk, posedge rst)
+begin
+if(rst)
+outp <= 0;
+else if(state == 2'b11)
+outp <= 1;
+else outp<= 0;
+end
+endmodule
 
 OUTPUT:
 
------Place a Waveform Generated from Xilinx ISE------------
+![image](https://github.com/YUVARJ-J/VLSI-LAB-EXP-5/assets/161425982/d18e9015-c0b2-4594-958b-2d5002c4361a)
+
 
 RESULT:
 
 
-
+Thus the finite state machine has been simulated and synthesised using xilinx ISE
