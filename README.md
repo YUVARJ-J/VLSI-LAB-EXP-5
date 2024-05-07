@@ -29,7 +29,7 @@ Logic Diagram :
 
 VERILOG CODE:
 
-*** module fsm( clk, rst, inp, outp);
+module fsm( clk, rst, inp, outp);
 input clk, rst, inp;
 output outp;
 reg [1:0] state;
@@ -72,7 +72,7 @@ else if(state == 2'b11)
 outp <= 1;
 else outp<= 0;
 end
-endmodule ***
+endmodule
 
 OUTPUT:
 
