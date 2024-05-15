@@ -1,15 +1,17 @@
 EXPT:5
 
-#SIMULATION AND IMPLEMENTATION OF FINITE STATE MACHINE
+SIMULATION AND IMPLEMENTATION OF FINITE STATE MACHINE
+
 DATE:23.04.2024
+
 AIM: To simulate and synthesis finite state machine using Xilinx ISE.
 
-**APPARATUS REQUIRED: **
+APPARATUS REQUIRED:
 
 Xilinx 14.7 
 Spartan6 FPGA
 
-**PROCEDURE: **
+PROCEDURE: 
 ```
 STEP:1 Start the Xilinx navigator, Select and Name the New project.
 STEP:2 Select the device family, device, package and speed. 
@@ -82,4 +84,5 @@ OUTPUT:
 
 
 RESULT:
+
 Thus the finite state machine has been simulated and synthesised using xilinx ISE
