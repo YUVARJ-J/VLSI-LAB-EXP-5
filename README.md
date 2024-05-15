@@ -1,4 +1,5 @@
 EXPT:5
+
 #SIMULATION AND IMPLEMENTATION OF FINITE STATE MACHINE
 DATE:23.04.2024
 AIM: To simulate and synthesis finite state machine using Xilinx ISE.
